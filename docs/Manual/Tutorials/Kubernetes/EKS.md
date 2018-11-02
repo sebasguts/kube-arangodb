@@ -137,6 +137,11 @@ $ curl -O   https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2018-08
 * Modify `data|mapRoles|rolearn` to match   
   equal to the `NoteInstanceRole`, you acquired after your node stack was finished
 
+* Deploy node integration
+```
+$ kubectl apply -f aws-auth-cm.yaml
+```
+
 ### Wait for nodes to join the cluster and get ready
 Monitor `kubectl get nodes` and watch your nodes to be ready
 ```
