@@ -134,8 +134,7 @@ Once stack is ready, navigate at the bottom to the Outputs pane and note down th
 ```
 $ curl -O   https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2018-08-30/aws-auth-cm.yaml
 ```
-* Modify `data|mapRoles|rolearn` to match   
-  equal to the `NoteInstanceRole`, you acquired after your node stack was finished
+* Modify `data|mapRoles|rolearn` to match the `NoteInstanceRole`, you acquired after your node stack was finished
 
 * Deploy node integration
 ```
